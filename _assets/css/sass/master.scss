@@ -2,9 +2,14 @@
 @import 'molecules/common_resetCss.scss';
 @import 'molecules/functions.scss';
 
+
+@import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../../../bower_components/neat/app/assets/stylesheets/neat';
+
+
 /*==================================================*/
 /*=============== MOLECULAR STYLES ================*/
-/*===============================================*/
+/*================================================*/
 /* (Common Elements that make up bigger groups elements.) */
 
 @import 'molecules/fonts.scss';

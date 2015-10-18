@@ -2,13 +2,99 @@
 /******** START MAIN HEADER AND NAVIGATION STYLES *********/
 
 
-header.main {
-	nav.main-nav {
-		ul {
-			li{}
-				a {}
+header {
+	padding: 8px 0 17px;
+	div.socials {
+		float: right;
+		margin-bottom: 20px;
+		p {
+			display: inline;
+			text-transform: uppercase;
+			margin-right: 100px;
+			a {
+				color: $white;
+				text-decoration: none;
+				@include transition();
+				&:hover {
+					opacity: .7;
+				}
 			}
-		#menu{}
+			&::after {
+				padding-left: 15px;
+				content: '•';
+				color: $white;
+			}
+		}
+		div.border {
+			height: 40px;
+			margin: 10px;
+			border-left: 4px dotted $white;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		ul {
+			display: inline-block;
+			vertical-align: middle;
+			li {
+				display: inline-block;
+				font-size: 2em;
+				margin-right: 10px;
+				@include boxShadow();
+				&:last-child {
+					margin-right: 0;
+				}
+				i.fa-facebook {
+					background-color: #445897;
+				}
+				i.fa-rss {
+					background-color: #cc8f32;
+				}
+				i.fa-twitter {
+					background-color: #6a8dc7;
+				}
+				i.fa-youtube {
+					background-color: $primary;
+				}
+			}
+		}
+		i {
+			padding: 15px 0;
+			text-align: center;
+			width: 60px;
+			height: 60px;
+		}
+	}
+	nav {
+		li {
+			float: left;
+			text-transform: uppercase;
+			width: 24.25%;
+			margin: 0 .5%;
+			padding: 15px 0;
+			text-align: center;
+			background-color: $primary;
+			@include boxShadow();
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+				&:hover {
+					opacity: .7;
+				}
+				span {
+					width: 18px;
+					height: 4px;
+					background-color: $white;
+					display: inline-block;
+					margin: 4px 10px;
+				}
+			}
+		}
 	}
 }
 

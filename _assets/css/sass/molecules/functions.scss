@@ -1,3 +1,8 @@
+@mixin clearfix {
+    display: block;
+    content: '';
+    clear: both;
+}
 
 @mixin border-radius ($radius: 5px) {
     -webkit-border-radius: $radius;
@@ -60,7 +65,7 @@
     background-clip:         padding-box;
 }
 
-@mixin opacity ($opacity: 0.5) {
+@mixin opacity ($opacity) {
     -webkit-opacity:    $opacity;
     -moz-opacity:       $opacity;
     opacity:        $opacity;

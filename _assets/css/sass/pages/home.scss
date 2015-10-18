@@ -1,0 +1,94 @@
+section#articles {
+	margin-bottom: 36px;
+	article {
+		display: inline-block;
+		width: 32%;
+		margin: 0 .75%;
+		background-color: $white;
+		padding: 30px 30px 20px;
+		@include boxShadow();
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		p {
+			font-size: .8em;
+			&.date {
+				color: #a6a6a6;
+				font-size: .8em;
+				padding-bottom: 15px;
+			}
+		}
+		a {
+			color: $primary;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			font-size: .8em;
+			@include bold();
+			&:before {
+				content: '[ ';
+			}
+			&:after {
+				content: ' ]';
+			}
+			&:hover {
+				opacity: .7;
+			}
+		}
+	}
+}
+
+section#people {
+	@include outer-container(12);
+	margin-bottom: 27px;
+	article {
+		border: 5px solid $white;
+		@include boxShadow();
+ 		@include span-columns(4);
+ 		&.sk8t3 {
+ 			@include span-columns(8);
+ 		}
+ 	}
+}
+
+.sk8t1 {
+	background: transparent url(/_assets/img/sk8er-4.png) no-repeat scroll center center / cover;
+}
+
+.sk8t2 {
+	background: transparent url(/_assets/img/sk8er-3.png) no-repeat scroll center center / cover;
+}
+
+.sk8t3 {
+	background: transparent url(/_assets/img/sk8er-1.png) no-repeat scroll center center / cover;
+}
+
+.sk8t4 {
+	background: transparent url(/_assets/img/sk8er-2.png) no-repeat scroll center center / cover;
+}
+
+section#boards {
+	margin-bottom: 30px;
+	div.container {
+		background-color: $white;
+		@include boxShadow();
+		padding: 13px 0 24px;
+		div {
+			width: 6%;
+			margin: 0 2%;
+			float: left;
+			img {
+				width: 100%;
+			}
+		}
+		&::after {
+			clear: both;
+			content: '';
+			display: block;
+		}
+	}
+}
