@@ -16,6 +16,7 @@ function firstLoad() {
 	showMenu();
 	checkScreenSize();
 	initPlaceholders();
+	stickyNav();
 }
 
 // function to set dom vars, etc that will not change
@@ -90,22 +91,17 @@ function placeholderSupported() {
     return ('placeholder' in test);
 }
 
-$(document).ready(function(){
-	$(window).scroll(function() {
-		var stickyHeight = $('main').height();
-		$('section').each(function() {
-			var position = $(this).position();
-				console.log($(this).attr('id') + position.top);
-				$(this).ScrollSpy({
-				min: position.top - stickyHeight,
-				max: position.top + $(this).height,
-				onEnter: function(element, position) {
-				$('#indicator li:nth-of-type(' + $(this).index() + 1 + ')').addClass('active');
-				},
-				onLeave: function(element, position) {
-				$('#indicator li:nth-of-type(' + $(this).index() + 1 + ')').removeClass('active');
-				}
-			});
-		});
-	});
-});
+function stickyNav() {
+    $('#indicator').scrollspy({
+        min: $('.slider').offset().top+200,
+        max: $('footer').offset().top,
+        container: window,
+        onEnter: function() {
+            $("#indicator").addClass('visible');
+        },
+        onLeave: function() {
+            $("#indicator").removeClass('visible');
+        }
+    });
+}
+

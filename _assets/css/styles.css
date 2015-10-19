@@ -323,14 +323,21 @@ i {
 #indicator {
   background-color: #b4292e;
   position: fixed;
+  opacity: 0;
   left: 5%;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   width: 240px;
-  padding: 40px 0;
+  padding: 35px 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 700;
+  -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
   #indicator::after {
     content: '';
     width: 0;
@@ -341,12 +348,15 @@ i {
     position: absolute;
     right: -30px;
     top: 0; }
+  #indicator.visible {
+    opacity: 1; }
   #indicator li {
     display: none; }
     #indicator li.active {
       display: block; }
     #indicator li a {
-      color: #ffffff; }
+      color: #ffffff;
+      text-decoration: none; }
 
 /*=================================================*/
 /*================ ORGANIC STYLES ================*/

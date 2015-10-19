@@ -84,13 +84,16 @@ i {
 #indicator {
 	background-color: $primary;
 	position: fixed;
+	opacity: 0;
 	left: 5%;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 	width: 240px;
-	padding: 40px 0;
-	@include regular();
+	padding: 35px 0;
+	@include bold();
+	@include boxShadow();
+	@include transition();
 	&::after {
 		content: '';
 		width: 0;
@@ -102,6 +105,9 @@ i {
 		right: -30px;
 		top: 0;
 	}
+	&.visible {
+		opacity: 1;
+	}
 	li {
 		display: none;
 		&.active {
@@ -109,6 +115,7 @@ i {
 		}
 		a {
 			color: $white;
+			text-decoration: none;
 		}
 	}
 }

@@ -3,10 +3,10 @@
 
 <div id="background"></div><!--background-->
 
-<div id="indicator" class="sticky">
+<div id="indicator">
 
 	<ul>
-		<li><a href="#articles">Sk8t News</a></li>
+		<li class="active"><a href="#articles">Sk8t News</a></li>
 		<li><a href="#people">Skateboarders</a></li>
 		<li><a href="#boards">Board Design</a></li>
 		<li><a href="#contact">Contact Us</a></li>
