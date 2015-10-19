@@ -15,10 +15,10 @@
 			<div class="clearfix"></div>
 			<nav>
 				<ul>
-					<li><a href="/"><span></span>Sk8t News<span></span></a></li>
-					<li><a href="/"><span></span>Skateboarders<span></span></a></li>
-					<li><a href="/"><span></span>Board Design<span></span></a></li>
-					<li><a href="/"><span></span>Contact Us<span></span></a></li>
+					<li><a href="#articles"><span></span>Sk8t News<span></span></a></li>
+					<li><a href="#people"><span></span>Skateboarders<span></span></a></li>
+					<li><a href="#boards"><span></span>Board Design<span></span></a></li>
+					<li><a href="#contact"><span></span>Contact Us<span></span></a></li>
 				</ul>
 			</nav>
 			<div class="clearfix"></div>
