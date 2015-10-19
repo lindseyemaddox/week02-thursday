@@ -91,6 +91,7 @@ function placeholderSupported() {
     return ('placeholder' in test);
 }
 
+
 function stickyNav() {
     $('#indicator').scrollspy({
         min: $('.slider').offset().top+200,
@@ -104,4 +105,3 @@ function stickyNav() {
         }
     });
 }
-
