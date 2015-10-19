@@ -81,3 +81,34 @@ i {
     box-shadow:     	$x $y $blur $spread rgba(0, 0, 0, $alpha);
 }
 
+#indicator {
+	background-color: $primary;
+	position: fixed;
+	left: 5%;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2em;
+	width: 240px;
+	padding: 40px 0;
+	@include regular();
+	&::after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 0px 45px 30px;
+		border-color: transparent transparent transparent $primary;
+		position: absolute;
+		right: -30px;
+		top: 0;
+	}
+	li {
+		display: none;
+		&.active {
+			display: block;
+		}
+		a {
+			color: $white;
+		}
+	}
+}

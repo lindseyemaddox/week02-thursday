@@ -3,6 +3,17 @@
 
 <div id="background"></div><!--background-->
 
+<div id="indicator" class="sticky">
+
+	<ul>
+		<li><a href="#articles">Sk8t News</a></li>
+		<li><a href="#people">Skateboarders</a></li>
+		<li><a href="#boards">Board Design</a></li>
+		<li><a href="#contact">Contact Us</a></li>
+	</ul>
+
+</div><!--sticky-->
+
 <section class="slider">
 
 	<div class="inner">
@@ -28,6 +39,8 @@
 	</div><!--inner-->
 
 </section>
+
+<main>
 
 <section id="articles">
 	
@@ -76,30 +89,38 @@
 <section id="people">
 	
 	<div class="inner">
-		
-		<article class="sk8t1">
+
+		<div class="container">
+
+			<div class="left">
 			
-			<h3>Lance Mountain</h3>
+				<article class="sk8t1">
+					
+					<h3>Lance Mountain</h3>
 
-		</article>
+				</article>
 
-		<article class="sk8t2">
-			
-			<h3>Rodney Mullen</h3>
+				<article class="sk8t2">
+					
+					<h3>Rodney Mullen</h3>
 
-		</article>
+				</article>
 
-		<article class="sk8t4">
-			
-			<h3>Tommy Guerrero</h3>
+				<article class="sk8t3">
+					
+					<h3>Steve Caballero</h3>
 
-		</article>
+				</article>
 
-		<article class="sk8t3">
-			
-			<h3>Steve Caballero</h3>
+			</div><!--left-->
 
-		</article>
+			<article class="sk8t4">
+				
+				<h3>Tommy Guerrero</h3>
+
+			</article>
+
+		</div><!--container-->
 
 	</div><!--inner-->
 

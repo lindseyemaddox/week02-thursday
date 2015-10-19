@@ -89,3 +89,23 @@ function placeholderSupported() {
     test = document.createElement('input');
     return ('placeholder' in test);
 }
+
+$(document).ready(function(){
+	$(window).scroll(function() {
+		var stickyHeight = $('main').height();
+		$('section').each(function() {
+			var position = $(this).position();
+				console.log($(this).attr('id') + position.top);
+				$(this).ScrollSpy({
+				min: position.top - stickyHeight,
+				max: position.top + $(this).height,
+				onEnter: function(element, position) {
+				$('#indicator li:nth-of-type(' + $(this).index() + 1 + ')').addClass('active');
+				},
+				onLeave: function(element, position) {
+				$('#indicator li:nth-of-type(' + $(this).index() + 1 + ')').removeClass('active');
+				}
+			});
+		});
+	});
+});

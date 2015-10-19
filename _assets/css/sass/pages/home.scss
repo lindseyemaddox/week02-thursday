@@ -43,16 +43,43 @@ section#articles {
 }
 
 section#people {
-	@include outer-container(12);
 	margin-bottom: 27px;
-	article {
-		border: 5px solid $white;
-		@include boxShadow();
- 		@include span-columns(4);
- 		&.sk8t3 {
- 			@include span-columns(8);
- 		}
- 	}
+	@include outer-container(12);
+	div.container {
+		@include span-columns(12);
+		article {
+			border: 5px solid $white;
+			height: 222px;
+			margin-bottom: 5px;
+			padding-top: 74px;
+			@include boxShadow();
+	 	}
+		div.left {
+			@include span-columns(8);
+			article.sk8t1 {
+				@include span-columns(4 of 8);
+				padding-top: 60px;
+			}
+			article.sk8t2 {
+				@include span-columns(4 of 8);
+				@include omega();
+				padding-top: 60px;
+			}
+			article.sk8t3 {
+				@include span-columns(8 of 8);
+			}
+		}
+		article.sk8t4 {
+			@include span-columns(4);
+			height: 448px;
+			padding-top: 168px;
+		}
+	}	
+	&::after {
+		clear: both;
+		display: block;
+		content: '';
+	}
 }
 
 .sk8t1 {
@@ -64,11 +91,11 @@ section#people {
 }
 
 .sk8t3 {
-	background: transparent url(/_assets/img/sk8er-1.png) no-repeat scroll center center / cover;
+	background: transparent url(/_assets/img/sk8er-1.png) no-repeat scroll 60px center / cover;
 }
 
 .sk8t4 {
-	background: transparent url(/_assets/img/sk8er-2.png) no-repeat scroll center center / cover;
+	background: transparent url(/_assets/img/sk8er-2.png) no-repeat scroll -400px center / cover;
 }
 
 section#boards {

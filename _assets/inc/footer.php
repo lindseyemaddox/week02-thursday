@@ -1,5 +1,5 @@
 
-		<footer>
+		<footer id="contact">
 
 			<div class="inner">
 				
@@ -41,6 +41,8 @@
 			</div><!--inner-->
 
 		</footer>
+	
+	</main>
 
 		<script src="/_assets/js/flexslider.jquery.js"></script>
 

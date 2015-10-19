@@ -320,6 +320,34 @@ i {
     transition: all 0.15s ease-out 0s;
     opacity: .5; }
 
+#indicator {
+  background-color: #b4292e;
+  position: fixed;
+  left: 5%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  width: 240px;
+  padding: 40px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400; }
+  #indicator::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 0px 45px 30px;
+    border-color: transparent transparent transparent #b4292e;
+    position: absolute;
+    right: -30px;
+    top: 0; }
+  #indicator li {
+    display: none; }
+    #indicator li.active {
+      display: block; }
+    #indicator li a {
+      color: #ffffff; }
+
 /*=================================================*/
 /*================ ORGANIC STYLES ================*/
 /*===============================================*/
@@ -720,32 +748,73 @@ section#articles {
         opacity: .7; }
 
 section#people {
+  margin-bottom: 27px;
   max-width: 12;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 27px; }
+  margin-right: auto; }
   section#people::after {
     clear: both;
     content: "";
     display: table; }
-  section#people article {
-    border: 5px solid #ffffff;
-    -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+  section#people div.container {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 31.7615656014%; }
-    section#people article:last-child {
+    width: 100%; }
+    section#people div.container:last-child {
       margin-right: 0; }
-    section#people article.sk8t3 {
+    section#people div.container article {
+      border: 5px solid #ffffff;
+      height: 222px;
+      margin-bottom: 5px;
+      padding-top: 74px;
+      -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25);
+      box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.25); }
+    section#people div.container div.left {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
       width: 65.8807828007%; }
-      section#people article.sk8t3:last-child {
+      section#people div.container div.left:last-child {
         margin-right: 0; }
+      section#people div.container div.left article.sk8t1 {
+        float: left;
+        display: block;
+        margin-right: 3.5786636068%;
+        width: 48.2106681966%;
+        padding-top: 60px; }
+        section#people div.container div.left article.sk8t1:last-child {
+          margin-right: 0; }
+      section#people div.container div.left article.sk8t2 {
+        float: left;
+        display: block;
+        margin-right: 3.5786636068%;
+        width: 48.2106681966%;
+        margin-right: 0;
+        padding-top: 60px; }
+        section#people div.container div.left article.sk8t2:last-child {
+          margin-right: 0; }
+      section#people div.container div.left article.sk8t3 {
+        float: left;
+        display: block;
+        margin-right: 3.5786636068%;
+        width: 100%; }
+        section#people div.container div.left article.sk8t3:last-child {
+          margin-right: 0; }
+    section#people div.container article.sk8t4 {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      height: 448px;
+      padding-top: 168px; }
+      section#people div.container article.sk8t4:last-child {
+        margin-right: 0; }
+  section#people::after {
+    clear: both;
+    display: block;
+    content: ''; }
 
 .sk8t1 {
   background: transparent url(/_assets/img/sk8er-4.png) no-repeat scroll center center/cover; }
@@ -754,10 +823,10 @@ section#people {
   background: transparent url(/_assets/img/sk8er-3.png) no-repeat scroll center center/cover; }
 
 .sk8t3 {
-  background: transparent url(/_assets/img/sk8er-1.png) no-repeat scroll center center/cover; }
+  background: transparent url(/_assets/img/sk8er-1.png) no-repeat scroll 60px center/cover; }
 
 .sk8t4 {
-  background: transparent url(/_assets/img/sk8er-2.png) no-repeat scroll center center/cover; }
+  background: transparent url(/_assets/img/sk8er-2.png) no-repeat scroll -400px center/cover; }
 
 section#boards {
   margin-bottom: 30px; }
